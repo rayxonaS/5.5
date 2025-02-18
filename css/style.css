@@ -1,0 +1,275 @@
+@font-face {
+  font-display: swap;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dm-sans-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/dm-sans-v15-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/dm-sans-v15-latin-700.woff2") format("woff2");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline-offset: 4px;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #12131a;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1090px; /* you need change it  */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2em;
+}
+.header-container {
+  display: flex;
+}
+
+.header-text {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #e4e4ef;
+  margin-right: auto;
+  margin-left: 1.2rem;
+}
+.site-image {
+  margin-left: auto;
+}
+
+.main {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  width: 100%;
+  max-width: 510px;
+  height: 128px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1;
+  text-align: center;
+  color: #f2f2f7;
+  margin-bottom: 4.8rem;
+}
+
+.input {
+  width: 990px;
+  height: 200px;
+  background-color: #21222c;
+  border-color: #2a2b37;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: white;
+  margin-top: 4.8rem;
+
+  &:hover {
+    border-color: #d3a0fa;
+  }
+}
+
+.hero-description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-item {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #e4e4ef;
+  margin-right: 2.4rem;
+}
+
+.hero-image {
+  margin-right: 1rem;
+
+  &:hover {
+    background-color: #d3a0fa;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+
+.hero-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #e4e4ef;
+  margin-left: 40rem;
+  justify-content: end;
+}
+
+.design {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+.design-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.design-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #12131a;
+}
+.design-item:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  color: #12131a;
+  background-color: #d3a0fa;
+  width: 320px;
+  height: 150px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1;
+  padding: 2.5rem 1.6rem 6.1rem 1.6rem;
+  background-image: url(../images/first.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.design-item:nth-child(2) {
+  grid-row: 1/7;
+  grid-column: 3/5;
+  color: #12131a;
+  background-color: #ff9f00;
+  width: 320px;
+  height: 150px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1;
+  padding: 2.5rem 1.6rem 6.1rem 1.6rem;
+  background-image: url(../images/second.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.design-item:nth-child(3) {
+  grid-row: 1/3;
+  grid-column: 5/7;
+  color: #12131a;
+  background-color: #fe8159;
+  width: 320px;
+  height: 150px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1;
+  padding: 2.5rem 1.6rem 6.1rem 1.6rem;
+  background-image: url(../images/third.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.features {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.features-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-text {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  color: #e4e4ef;
+}
+.features-description {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: #e4e4ef;
+  margin-top: 2.2rem;
+}
